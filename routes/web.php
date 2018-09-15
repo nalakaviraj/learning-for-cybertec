@@ -12,7 +12,8 @@
 */
 
 Route::get('/', function () {
-    return view('create');
+    return view('add_applicant');
 });
 
 Route::resource('passports','PassportController');
+Route::resource('applicants','ApplicantsController');
